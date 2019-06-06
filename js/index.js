@@ -51,11 +51,25 @@ let paragraphs = document.querySelectorAll("p")
 let middleImg = document.getElementById("middle-img");
 
 
-let counter = 1;
-navAnchors.forEach(function (element) {
-  element.textContent = siteContent['nav'][`nav-item-${counter}`]
-  counter++;
-});
+let navList = document.querySelectorAll('nav a')
+for (let i = 0; i < navList.length; i++) {
+  navList[i].textContent = siteContent['nav'][`nav-item-${i + 1}`];
+  navList[i].style.color = 'green';
+};
+
+// new content added using prepend and append
+const newNavList = document.querySelector('nav');
+const navHome = document.createElement('a');
+const navBlog = document.createElement('a');
+navHome.href = '#';
+navHome.textContent = 'Home';
+navHome.style.color = 'green';
+navBlog.href = '#';
+navBlog.textContent = 'Blog';
+navBlog.style.color = 'green';
+
+newNavList.appendChild(navBlog);
+newNavList.prepend(navHome);
 
 mainHeader.textContent = siteContent["cta"]["h1"];
 
