@@ -71,6 +71,7 @@ navBlog.style.color = 'green';
 newNavList.appendChild(navBlog);
 newNavList.prepend(navHome);
 
+//Header
 mainHeader.textContent = siteContent["cta"]["h1"];
 
 headerImg.setAttribute('src', siteContent["cta"]["img-src"]);
@@ -82,6 +83,8 @@ H4[2].textContent = siteContent["main-content"]["services-h4"];
 H4[3].textContent = siteContent["main-content"]["product-h4"];
 H4[4].textContent = siteContent["main-content"]["vision-h4"];
 
+
+//Main Content
 paragraphs[0].textContent = siteContent["main-content"]["features-content"];
 paragraphs[1].textContent = siteContent["main-content"]["about-content"];
 paragraphs[2].textContent = siteContent["main-content"]["services-content"];
@@ -89,9 +92,18 @@ paragraphs[3].textContent = siteContent["main-content"]["product-content"];
 paragraphs[4].textContent = siteContent["main-content"]["vision-content"];
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
+
+//paragraphs
 H4[5].textContent = siteContent["contact"]["contact-h4"];
 paragraphs[5].textContent = siteContent["contact"]["address"];
 paragraphs[6].textContent = siteContent["contact"]["phone"];
 paragraphs[7].textContent = siteContent["contact"]["email"];
 
 paragraphs[8].textContent = siteContent["footer"]["copyright"];
+
+
+// CHANGES TO THE PAGE
+document.querySelector("body").style.backgroundColor = "#C6E7CE";
+document.querySelector(".container").style.backgroundColor = "#84CF96";
+document.querySelector("h1").style.color = "#009A31";
+document.querySelectorAll("a").forEach(link => link.style.textDecoration = "underline");
