@@ -1,14 +1,75 @@
 body {
+  width: 100%;
+  max-width: 880px;
+  margin: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+  font-family: "HelveticaNeue-Light",
+  "Helvetica Neue Light",
+  "Helvetica Neue",
+  Helvetica,
+  Arial,
+  sans-serif;
+  }
 
 .digit {
   display: inline-block;
-  font-size: 80px;
+  font-size: 20em;
 }
 
 .redDigit {
-  color: red;
+  color: rgb(0, 0, 0);
 }
+
+#msHundreds {
+  color: purple;
+}
+
+#msTens {
+  color:green;
+}
+
+#secondOnes {
+  color: blue;
+}
+
+#secondTens {
+  color:pink;
+}
+
+button {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+
+   background-image: linear-gradient(to right, #009245, #FCEE21, #00A8C5, #D9E021);
+   box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+}
+
+button:hover {
+  background-position: 100% 0;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+button:focus{
+  outline: none;
+}
+
