@@ -1,14 +1,110 @@
 body {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  font-family: "HelveticaNeue-Light",
+  "Helvetica Neue Light",
+  "Helvetica Neue",
+  Helvetica,
+  Arial,
+  sans-serif;
+
+  background-color: #44a9a1;
+  background-image: radial-gradient(closest-side, transparent 98%, #dbdbd3 99%),
+  radial-gradient(closest-side, transparent 98%, #dbdbd3 99%),
+  linear-gradient(45deg, #1f6e7b 25%, transparent 25%, transparent),
+  linear-gradient(45deg, transparent 75%, #1f6e7b 75%, #1f6e7b),
+  linear-gradient(45deg, #e59438 25%, transparent 25%, transparent),
+  linear-gradient(45deg, transparent 75%, #e59438 75%, #e59438),
+  linear-gradient(00deg, transparent 50%, #903b34 50%, #903b34);
+  background-size: 60px 60px;
+  background-position: 15px 15px,
+  45px 45px,
+  15px 15px,
+  45px 45px,
+  45px 45px,
+  15px 15px,
+  15px 15px;
+  }
+
+.digits{
+  background: #dfd9cb;
+  margin: auto;
+  height: 100px;
+  width: 300px;
+  text-align: center;
+  border-radius: 150px;
+  font-family: 'Wire One',
+  sans-serif;
+  font-size: 75px;
+  line-height: 60px;
+  font-variant: small-caps;
+  font-weight: normal;
+  padding: 30px;
+  display: inline-block;
 }
 
 .digit {
-  display: inline-block;
-  font-size: 80px;
+  display: inline-block;  
+  
 }
 
 .redDigit {
-  color: red;
+  color: #257c73;
 }
+
+#msHundreds {
+  color: #257c73;
+}
+
+#msTens {
+  color: #257c73;
+}
+
+#secondOnes {
+  color: #257c73;
+}
+
+#secondTens {
+  color: #257c73;
+}
+
+button {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #257c73;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: 10px #257c73;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  background-image: #257c73;
+}
+
+button:hover {
+  background-position: 100% 0;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+button:focus{
+  outline: none;
+}
+
